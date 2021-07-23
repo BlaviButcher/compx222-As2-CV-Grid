@@ -38,7 +38,8 @@ span {
 }
 
 #results-table td:nth-child(2) {
-    padding-left: 15px;
+    color: #9E2A2B;
+    padding-left: 20px;
 }
 
 #results-table th {
@@ -54,6 +55,18 @@ span {
 
 #responsibilities {
     font-size: 1.2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 0 20px;
+}
+
+footer span {
+    font-size: 2rem;
+    color: black;
+
 }
 
 

@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    margin: 0;
+    
+}
+
+/* Hide br cause it's annoying and not needed with this css */
+br {
+    display: none;
+}
+
+/* Main sections */
+
+#brief-information {
+    display: flex;
+    flex-direction: column;
+    flex: 1 2 0;
+}
+
+#detailed-information {
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: column;
+    flex: 2 2 0;
+}
+
+/* Sub sections */
+
+#contact-section {
+    background-color: #FEAEA2;
+    height: 500px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #B30089
+}
+
+#skill-section, #profile-section {
+    background-color: #FFF1EF;
+}
+
+#skill-section {
+    /* border: 1px solid black; */
+    flex-grow: 1;
+    padding: 0;
+}
+
+#profile-section {
+    height: 500px;
+}
+
+#large-info-section {
+    flex: 1 0 0;
+}
+
+#large-info-section, #skill-section, #contact-section, #profile-section {
+    padding: 0 70px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+#contact-table td:nth-child(2) {
+    padding-left: 20px;
+    color: #B30089;
+}
