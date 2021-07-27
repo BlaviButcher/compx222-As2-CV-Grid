@@ -1,6 +1,8 @@
 body {
     display: flex;
     margin: 0;
+    font-family: 'Dancing Script', cursive;
+    color: #F62DAE;
     
 }
 
@@ -34,7 +36,7 @@ br {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #B30089
+    color: #B30089;
 }
 
 #skill-section, #profile-section {
@@ -45,14 +47,26 @@ br {
     /* border: 1px solid black; */
     flex-grow: 1;
     padding: 0;
+    color: #F62DAE;
+    font-size: 1.3rem;
+}
+
+#skill-section li {
+    padding: 10px 0 10px 0;
 }
 
 #profile-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 500px;
+    color: #F62DAE;
+    font-size: 1.3rem;
 }
 
 #large-info-section {
     flex: 1 0 0;
+    font-size: 1.3rem;
 }
 
 #large-info-section, #skill-section, #contact-section, #profile-section {
@@ -67,3 +81,49 @@ img {
     padding-left: 20px;
     color: #B30089;
 }
+
+.section-heading {
+    font-size: 2.5rem;
+    
+}
+
+.section-heading, caption {
+    color: #B30089;
+}
+
+caption {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+#large-info-section td:nth-child(2) {
+    padding-left: 65px;
+}
+
+#large-info-section th:nth-child(2) {
+    padding-left: 50px;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+#responsibilities {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+#copyright {
+    text-align: end;
+    text-size: 1.5rem;
+}
+
+#copyright span {
+    margin-right: 5px;
+}
+
