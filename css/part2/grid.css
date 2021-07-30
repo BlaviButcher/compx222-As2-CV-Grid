@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(42, 42, 42);
+    color: whitesmoke;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 420px);
+    grid-gap: 20px;
+    grid-template-areas: 
+            "Fig-1 Fig-1 Fig-2 Fig-3 Fig-4"
+            "Fig-1 Fig-1 Fig-5 Fig-6 Fig-7"
+            "Fig-8 Fig-8 Fig-11 Fig-11 Fig-11"
+            "Fig-8 Fig-8 Fig-11 Fig-11 Fig-11"
+            "Fig-9 Fig-10 Fig-11 Fig-11 Fig-11";
+}
+
+
+
+img {
+    width:100%;
+    height:100%;
+    border-radius: 5%;
+}
+
+figure {
+    text-align: center;
+    margin-bottom: 200px;
+    padding-bottom: 20px;
+}
+
+
+.flex-wrapper {
+    display:flex;
+    flex-direction: column;
+}
+
+
+ .fig-1 {
+    grid-area: Fig-1;
+}
+
+
+
+.fig-2 {
+    grid-area: Fig-2;
+}
+
+.fig-3 {
+    grid-area: Fig-3;
+}
+
+.fig-4 {
+    grid-area: Fig-4;
+}
+
+.fig-5 {
+    grid-area: Fig-5;
+}
+
+.fig-6 {
+    grid-area: Fig-6;
+}
+
+.fig-7 {
+    grid-area: Fig-7;
+}
+
+.fig-8 {
+    grid-area: Fig-8;
+}
+
+.fig-9 {
+    grid-area: Fig-9;
+}
+
+.fig-10 {
+    grid-area: Fig-10;
+}
+
+.fig-11 {
+    grid-area: Fig-11;
+}  
+
+figure {
+    margin: 0px;
+}
