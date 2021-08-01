@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    margin: 0;
+}
+
+.outer-most {
+    padding: 20px 0 20px 0;
+}
+
+#brief-information {
+    width: 25%;
+    /* center content, but keep items content left aligned */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* color */
+    background-color: #414066;
+    color: white;
+
+}
+
+img {
+    /* Center image */
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#contact-table td:nth-child(1) {
+    /* hide start of table */
+    display: none;
+}
+
+#contact-table {
+    /* center text and put some space vertically */
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+
+#skill-section h3 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* put space between each li */
+#skill-section li:not(:first-child) {
+    padding-top: 20px;
+}
+
+#detailed-information {
+    width: 75%;
+    background-color: #BAACBD;
+    padding: 0 100px 0 100px;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+hr {
+    width: 10%;
+}
+
+/* better link color */
+a {
+    color: white;
+}
