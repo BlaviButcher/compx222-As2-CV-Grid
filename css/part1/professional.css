@@ -1,6 +1,7 @@
 body {
     display: flex;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 .outer-most {
@@ -50,13 +51,26 @@ img {
 
 #detailed-information {
     width: 75%;
-    background-color: #BAACBD;
+    background-color: #dacfdd;
+    /* background-color: #BAACBD; */
     padding: 0 100px 0 100px;
 }
 
 
+.section-heading {
+    font-size: 1.5rem;
+}
+
+.date-range {
+    padding-left: 5px;
+}
+
 h1, h2 {
     text-align: center;
+}
+
+h4 {
+    font-size: 1.1rem;
 }
 
 hr {
