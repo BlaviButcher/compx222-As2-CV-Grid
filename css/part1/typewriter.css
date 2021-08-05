@@ -1,3 +1,5 @@
+/* Things left uncommented are self-explanatory */
+
 body {
     background-color: wheat;
     font-family: 'Special Elite', cursive; 
@@ -6,24 +8,24 @@ body {
     
 }
 
+/* dashed hr with padding top and bottom */
 hr {
     border: 1px dashed black;
-    margin: 15px 0 15px 0;
+    margin: 15px 0;
 }
 
+/* Circle image */
 img {
     border-radius: 50%; 
 }
 
-header {
-    text-align: left;
-}
-
+/* Gives all section headings an underline and top padding */
 .section-heading {
     padding-top: 20px;
     text-decoration: underline;
 }
 
+/* All titles of links in contact area get red and right padding  */
 span {
     color: #9E2A2B;
     padding-right: 10px;
@@ -33,19 +35,22 @@ span {
     color: #9E2A2B;
 }
 
-#results-table td {
-    padding: 0 10px 0 0;
+/* Gives the right column some more space */
+#results-table td, #results-table th {
+    padding-right: 10px;
 }
 
-#results-table td:nth-child(2) {
+/* Gives grades style */
+#results-table td:nth-child(2n) {
     color: #9E2A2B;
-    padding-left: 20px;
+    padding-left: 22px;
 }
 
 #results-table th {
     text-align: left;
 }
 
+/* title of result table */
 #results-table caption {
     font-size: 1.6rem;
     text-decoration: underline;
@@ -57,17 +62,7 @@ span {
     font-size: 1.2rem;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0 0 20px;
-}
-
-footer span {
-    font-size: 2rem;
-    color: black;
-}
-
+/* Make links inherit text color (black) */
 a {
     color: inherit;
 }
