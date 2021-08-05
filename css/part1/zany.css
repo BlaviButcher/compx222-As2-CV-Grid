@@ -1,3 +1,6 @@
+/* Anything uncommented is pretty self-explanatory */
+
+/* OTHER */
 h1, h2 {
     text-align: center;
 }
@@ -10,12 +13,30 @@ body {
     
 }
 
+a {
+    color: inherit;
+}
+
 /* Hide br cause it's annoying and not needed with this css */
 br {
     display: none;
 }
 
-/* Main sections */
+/* Make image circle */
+img {
+    border-radius: 50%;
+}
+
+
+h5 {
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+/* MAIN SECTIONS */
 /* Give a third of page and display as column */
 #brief-information {
     display: flex;
@@ -60,10 +81,12 @@ br {
     align-items: center;
 }
 
-#skill-section li {
-    padding: 10px 0 10px 0;
+/* Add spacing between li */
+#skill-section li:not(:first-child) {
+    padding: 20px 0 0 0;
 }
 
+/* Using flex for easier centering */
 #profile-section {
     display: flex;
     flex-direction: column;
@@ -73,38 +96,42 @@ br {
     font-size: 1.3rem;
 }
 
+/* rest of info */
 #large-info-section {
-    flex: 1 0 0;
+    border: 1px solid black;
+    /* flex grow to make sure it stretches to bottom of parent */
+    flex: 1;
     font-size: 1.3rem;
 }
 
+/* Give all sections a bit of padding to their start and end */
 #large-info-section, #skill-section, #contact-section, #profile-section {
     padding: 0 70px;
 }
 
-img {
-    border-radius: 50%;
-}
 
+/* Give end cell of table some padding and slightly dark color*/
 #contact-table td:nth-child(2) {
     padding-left: 20px;
     color: #B30089;
 }
 
 .section-heading {
-    font-size: 2.5rem;
-    
+    font-size: 2.5rem;  
 }
+
 
 .section-heading, caption {
     color: #B30089;
 }
 
+/* Give result title style*/
 caption {
     font-size: 2rem;
     margin-bottom: 10px;
     text-decoration: underline;
 }
+
 
 #large-info-section td:nth-child(2) {
     padding-left: 65px;
@@ -112,14 +139,6 @@ caption {
 
 #large-info-section th:nth-child(2) {
     padding-left: 50px;
-}
-
-h5 {
-    font-size: 1.1rem;
-}
-
-h4 {
-    font-size: 1.4rem;
 }
 
 #responsibilities {
@@ -136,6 +155,3 @@ h4 {
     margin-right: 5px;
 }
 
-a {
-    color: inherit;
-}
