@@ -16,13 +16,14 @@ br {
 }
 
 /* Main sections */
-
+/* Give a third of page and display as column */
 #brief-information {
     display: flex;
     flex-direction: column;
     flex: 1 2 0;
 }
 
+/* Give 2 thirds of and display as column */
 #detailed-information {
     /* border: solid 1px black; */
     display: flex;
@@ -31,11 +32,10 @@ br {
 }
 
 /* Sub sections */
-
+/* Using flexbox to easily handle centering containers */
 #contact-section {
     background-color: #FEAEA2;
     height: 500px;
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,12 +47,17 @@ br {
     background-color: #FFF1EF;
 }
 
+
 #skill-section {
-    /* border: 1px solid black; */
+    /* Make column grow to bottom of parent */
     flex-grow: 1;
     padding: 0;
     color: #F62DAE;
     font-size: 1.3rem;
+    /* Using flexbox to center containers but not li */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #skill-section li {
