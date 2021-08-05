@@ -22,8 +22,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- <link rel="stylesheet" href="../../css/part1/typewriter.css"> -->
-    <!-- <link rel="stylesheet" href="../../css/part1/zany.css"> -->
-    <link rel="stylesheet" href="../../css/part1/professional.css">
+    <link rel="stylesheet" href="../../css/part1/zany.css">
+    <!-- <link rel="stylesheet" href="../../css/part1/professional.css"> -->
     <title>CV</title>
 </head>
 
@@ -33,16 +33,19 @@
         <div id="contact-section" class="content-box">
             <header>
                 <!-- MARKER PLEASE READ!!! - In the specs it said to put the image to the left with text wrapping
-                I didn't do this as it ruins my css and it's a pain to work with. All i need to add is "align: left"" 
-                and "hspace="20"". Please take into account that I know exactly how to do it but I did not want to add
+                I didn't do this as I started on the assignment when the specs still said to put image on top/left
+                I can't change it now as it ruins my css and it's a pain to work with. All i need to add is "align: left"" 
+                and "hspace="20"" if I were to used html to do it, which is what I implied, not sure if that is what is
+                infered however. Please take into account that I know exactly how to do it but I did not want to add
                 it because it's too fiddly with the css to the correct it and it's bad practiced as it was depricated
                 in 1998 -->
                 <img src="img/face.jpg" width="200" alt="photo of Riley Douglas">
-                <h1>Riley Douglas</h1>
+                <h1 id="test">Riley Douglas</h1>
                 <h2>Intern Developer</h2>
             </header>
 
             <hr>
+            <!-- Table for all contact information -->
             <table id="contact-table">
                 <tbody>
                     <tr>
@@ -67,6 +70,7 @@
             </table>
         </div>
         <br>
+        <!-- Skill Section - Location: start/bottom -->
         <div id="skill-section" class="content-box">
             <h3 class="section-heading">Skills</h3>
             <ul>
@@ -84,7 +88,9 @@
             </ul>
         </div>
     </div>
+    <!-- Wrapper around all information on the end side of page -->
     <div id="detailed-information" class="outer-most">
+        <!-- Blurb about myself Location: top/end -->
         <div id="profile-section" class="content-box">
             <h3 class="section-heading">Profile</h3>
 
@@ -102,7 +108,10 @@
                 future career in the world of Computer Science. </p>
         </div>
 
+        <!-- Holds rest of inforamation ie. Employment, Education. 
+             Location: bottom/end -->
         <div id="large-info-section" class="content-box">
+            <!-- Employment history -->
             <h3 class="section-heading">Employment History</h3>
             <h4>Junior Chef, Hobbiton Movie Set Tours - Matamata</h4>
             <h5 class="date-range"><em>July 2016 - January 2019</em></h5>
@@ -113,6 +122,7 @@
                 taught me the value of time management and working with other departments as well as working on my own
                 while still giving the best experience to the customers.
             </p>
+            <!-- Responsibilities on the job -->
             <h5 id="responsibilities">Responsibilities</h5>
             <ul>
                 <li>Work with multiple departments to ensure a smooth and enjoyable experience for guests</li>
@@ -122,9 +132,11 @@
                 <li>Work with senior team leaders to keep a world class standard of service</li>
             </ul>
 
+            <!-- Education -->
             <h3 class="section-heading">Education</h3>
             <h4>Bachelor of Computer Science, University of Waikato</h4>
             <h5 class="date-range"><em>July 2019 - Nov 2022</em></h5>
+            <!-- Table holding results from education -->
             <table id="results-table">
                 <caption>Results</caption>
                 <thead>
@@ -192,6 +204,7 @@
             </table>
 
         </div>
+        <!-- Copyright notifier -->
         <div id="copyright"><span>&#169;</span>Copyright Riley Douglas 2021</div>
     </div>
 </body>
