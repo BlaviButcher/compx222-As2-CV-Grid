@@ -5,6 +5,7 @@ h1, h2 {
     text-align: center;
 }
 
+/* flex for easy alignment */
 body {
     display: flex;
     margin: 0;
@@ -80,9 +81,9 @@ h4 {
     align-items: center;
 }
 
-/* Add spacing between li */
+/* Add spacing between li in skill section */
 #skill-section li:not(:first-child) {
-    padding: 20px 0 0 0;
+    padding: 40px 0 0 0;
 }
 
 /* Using flex for easier centering */
@@ -95,9 +96,8 @@ h4 {
     font-size: 1.3rem;
 }
 
-/* rest of info */
+/* rest of info - education, employment, referenes */
 #large-info-section {
-    border: 1px solid black;
     /* flex grow to make sure it stretches to bottom of parent */
     flex: 1;
     font-size: 1.3rem;
@@ -119,7 +119,7 @@ h4 {
     font-size: 2.5rem;  
 }
 
-
+/* Make all headings dark purple */
 .section-heading, caption {
     color: #B30089;
 }
@@ -131,7 +131,7 @@ caption {
     text-decoration: underline;
 }
 
-/*  Align right hand grades of grade table - Getting grades
+/* Align right hand grades of grade table - Getting grades
     under "Grade" head */
 #large-info-section td:nth-child(2) {
     padding-left: 65px;
@@ -147,11 +147,13 @@ caption {
     margin-bottom: 0;
 }
 
+/* Copyright stuff */
 #copyright {
-    text-align: end;
+    text-align: center;
     font-size: 1.1rem;
 }
 
+/* Copyright symbol */
 #copyright span {
     margin-right: 5px;
 }
