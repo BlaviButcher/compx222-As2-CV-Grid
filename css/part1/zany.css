@@ -131,11 +131,13 @@ caption {
     text-decoration: underline;
 }
 
-
+/*  Align right hand grades of grade table - Getting grades
+    under "Grade" head */
 #large-info-section td:nth-child(2) {
     padding-left: 65px;
 }
 
+/* Align entire right hand column of grade table */
 #large-info-section th:nth-child(2) {
     padding-left: 50px;
 }

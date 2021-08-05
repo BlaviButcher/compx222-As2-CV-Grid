@@ -1,9 +1,11 @@
 body {
+    /* Flex for easier alignment */
     display: flex;
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
 
+/* Two outer most divs dividing up the page horizontally */
 .outer-most {
     padding: 20px 0 20px 0;
 }
@@ -24,8 +26,10 @@ body {
 img {
     /* Center image */
     display: block;
-    border-radius: 50%;
     margin: auto;
+    /* make image circle */
+    border-radius: 50%;
+    
 }
 
 #contact-table td:nth-child(1) {
@@ -39,9 +43,12 @@ img {
     margin: 30px 0 10px 0;
 }
 
+/* Heading of skill section */
 #skill-section h3 {
     font-size: 1.4rem;
     text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px dotted white;
 }
 
 /* put space between each li */
@@ -56,23 +63,68 @@ img {
     padding: 0 100px 0 100px;
 }
 
-
+/* All section headings */
 .section-heading {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    border-bottom: 2px dotted black;
 }
 
 .date-range {
     padding-left: 5px;
 }
 
+/* employment responsibilities */
+#responsibilities {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+/* Give result title style*/
+caption {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+/*  Align right hand grades of grade table - Getting grades
+under "Grade" head */
+#large-info-section td:nth-child(2) {
+    padding-left: 65px;
+}
+
+/* Align entire right hand column of grade table */
+#large-info-section th:nth-child(2) {
+    padding-left: 50px;
+}
+
+/* Put copyright in center of page */
+#copyright {
+    text-align: center;
+    margin-bottom: 3px;
+    font-size: 1.1rem;
+}
+
+/* Copyright symbol to left of text */
+#copyright span {
+    margin-right: 5px;
+}
+
+/* Heading in start side of page top */
 h1, h2 {
     text-align: center;
 }
 
+/* Sub headings in section */
 h4 {
+    font-size: 1.3rem;
+}
+
+/* date range and responsibilites */
+h5 {
     font-size: 1.1rem;
 }
 
+/* horziontal rule under name */
 hr {
     width: 10%;
 }
